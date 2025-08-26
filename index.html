@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook APK ডাউনলোড</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #3b5998, #192742);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            margin: 20px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo svg {
+            width: 70px;
+            height: 70px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .file-info {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .file-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .download-btn {
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .download-btn:hover {
+            background-color: #166fe5;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .note {
+            font-size: 13px;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .github-info {
+            margin-top: 40px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        
+        .instructions {
+            text-align: left;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .download-btn {
+                padding: 14px 30px;
+                font-size: 16px;
+            }
+        }
+
+        .loader {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" fill="#1877F2">
+                <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+            </svg>
+        </div>
+        
+        <h1>Facebook APK ডাউনলোড</h1>
+        <p>নিচের বাটনে ক্লিক করে Facebook অ্যাপ্লিকেশনটির সর্বশেষ ভার্সন ডাউনলোড করুন</p>
+        
+        <div class="file-info">
+            <p><strong>ফাইল নাম:</strong> facebook.apk</p>
+            <p><strong>আকার:</strong> ৪৫.৬ MB</p>
+            <p><strong>সংস্করণ:</strong> ৪০১.০.০.২৬.১১৭</p>
+            <p><strong>আপডেট তারিখ:</strong> ১৫ নভেম্বর, ২০২৩</p>
+        </div>
+        
+        <button class="download-btn" onclick="downloadFile()" id="downloadBtn">
+            <i class="fas fa-download"></i>
+            ডাউনলোড করুন
+            <div class="loader" id="loader"></div>
+        </button>
+        
+        <p class="note">ডাউনলোড শুরু হতে কিছু সময় লাগতে পারে। ডাউনলোড শেষ হলে ফাইলটি ইনস্টল করুন।</p>
+        
+        <div class="github-info">
+            <p><i class="fab fa-github"></i> GitHub-এ হোস্ট করার জন্য প্রস্তুত</p>
+        </div>
+        
+        <div class="instructions">
+            <h3>GitHub-এ ব্যবহারের নির্দেশিকা:</h3>
+            <ol>
+                <li>এই ফাইলটি index.html নামে সেভ করুন</li>
+                <li>একই ফোল্ডারে facebook.apk ফাইলটি রাখুন</li>
+                <li>সম্পূর্ণ ফোল্ডারটি GitHub-এ আপলোড করুন</li>
+                <li>GitHub Pages এক্টিভেট করুন সেটিংস থেকে</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function downloadFile() {
+            const downloadBtn = document.getElementById('downloadBtn');
+            const loader = document.getElementById('loader');
+            
+            // লোডার দেখান
+            loader.style.display = 'inline-block';
+            downloadBtn.disabled = true;
+            
+            // ডাউনলোড সিমুলেশন
+            setTimeout(function() {
+                // সরাসরি APK ফাইল ডাউনলোড করার লিঙ্ক
+                window.location.href = 'facebook.apk';
+                
+                // লোডার লুকান
+                loader.style.display = 'none';
+                downloadBtn.disabled = false;
+                
+                // ডাউনলোড শুরু হয়েছে এমন মেসেজ
+                alert('ডাউনলোড শুরু হয়েছে! ফাইল: facebook.apk');
+            }, 1500);
+        }
+        
+        // পেজ লোড হওয়ার সময় ফাইল চেক করা
+        window.addEventListener('load', function() {
+            // ফাইল আছে কিনা চেক করার জন্য একটি রিকুয়েস্ট
+            fetch('facebook.apk', { method: 'HEAD' })
+            .then(response => {
+                if (!response.ok) {
+                    document.querySelector('.file-info').innerHTML += 
+                        '<p style="color:#ff6b6b;"><strong>সতর্কতা:</strong> facebook.apk ফাইলটি এখনও আপলোড করা হয়নি</p>';
+                }
+            })
+            .catch(error => {
+                document.querySelector('.file-info').innerHTML += 
+                    '<p style="color:#ff6b6b;"><strong>সতর্কতা:</strong> facebook.apk ফাইলটি এখনও আপলোড করা হয়নি</p>';
+            });
+        });
+    </script>
+</body>
+</html>
